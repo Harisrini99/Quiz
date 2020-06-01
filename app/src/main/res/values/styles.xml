@@ -1,0 +1,83 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents" />
+
+
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar.Dark">
+        <item name="android:textColorPrimary">@color/colorTextPrimaryDarkTheme</item>
+        <item name="android:textColorSecondary">@color/colorTextSecondaryDarkTheme</item>
+        <item name="android:textColorHint">@color/colorTextSecondaryDarkTheme</item>
+        <item name="colorControlNormal">@color/colorWhite</item>
+        <item name="colorControlHighlight">@color/md_grey_800</item>
+        <item name="android:windowBackground">@color/windowcolor</item>
+        <item name="colorPrimary">@color/md_grey_900</item>
+        <item name="colorPrimaryDark">@color/md_grey_900</item>
+        <item name="colorAccent">#EBFF80AB</item>
+        <item name="colorControlActivated">#ff8a80</item>
+    </style>
+
+
+    <style name="BottomSheet" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="BaseBottomSheetDialog" parent="Theme.Design.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="bottomSheetStyle">@style/BottomSheet</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="BaseBottomSheetDialog" />
+
+    <style name="BottomSheetDialogTheme.Light">
+        <item name="colorControlHighlight">@color/md_grey_200</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme.Dark">
+        <item name="colorControlHighlight">@color/md_grey_800</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme.Black">
+        <item name="colorControlHighlight">@color/md_grey_800</item>
+    </style>
+
+    <style name="RadioButtonStyle" parent="@android:style/Widget.CompoundButton">
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="CustomProgressBarHorizontal" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:minHeight">2dip</item>
+        <item name="android:maxHeight">5dip</item>
+        <item name="android:progressDrawable">@drawable/progress_drawable</item>
+        <item name="android:drawable">@drawable/logo</item>
+    </style>
+
+    <style name="Widget.Button.Toggle" parent="android:Widget">
+        <item name="android:background">@drawable/show_or_hide_bg</item>
+        <item name="android:disabledAlpha">?android:attr/disabledAlpha</item>
+    </style>
+
+
+    <style name="toggleButton"  parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:buttonStyleToggle">@style/Widget.Button.Toggle</item>
+        <item name="android:textOn"></item>
+        <item name="android:textOff"></item>
+        <item name="android:maxWidth">50dp</item>
+    </style>
+
+    <style name="Popup" >
+        <item name="android:itemBackground">@color/optionsCardColor</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/question_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="8dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/blueCardColor"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp"
+        app:strokeColor="@color/colorTextSecondaryDarkTheme"
+        app:strokeWidth="1dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+
+                <TextView
+                    android:id="@+id/questionNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:padding="10dp"
+                    android:text="Question No. 1"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/questionNumber"
+                    android:lineSpacingExtra="3dp"
+                    android:scrollHorizontally="true"
+                    android:text="Match List I correctly with List II and Select your answer using the codes given below:"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/question"
+                    android:scrollbarSize="0dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/table"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:autoSizeTextType="uniform"
+                            android:lineSpacingExtra="3dp"
+                            android:scrollHorizontally="true"
+                            android:text="+-----------------+--------------+\n| LIST I          | LIST II      |\n+-----------------+--------------+\n| (a). Pondichery | 1. British   |\n| (b). Goa        | 2. Danish    |\n| (c). Tranquebar | 3. French    |\n| (d). Chennai    | 4. Portuguee |\n+-----------------+--------------+\nCodes:\na b c d"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:typeface="monospace" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <RadioGroup
+                    android:id="@+id/questionsGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/horizontalLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="5dp"
+                        app:cardBackgroundColor="@color/optionsCardColor"
+                        app:strokeColor="@color/colorTextSecondaryDarkTheme"
+                        app:strokeWidth="1dp">
+
+                        <TextView
+                            android:id="@+id/A"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:paddingLeft="30dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:text="A.     3 1 2 5"
+                            android:textSize="16sp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="5dp"
+                        app:cardBackgroundColor="@color/optionsCardColor"
+                        app:strokeColor="@color/colorTextSecondaryDarkTheme"
+                        app:strokeWidth="1dp">
+
+                        <TextView
+                            android:id="@+id/B"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:paddingLeft="30dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:text="B.     3 1 2 5"
+                            android:textSize="16sp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="5dp"
+                        app:cardBackgroundColor="@color/optionsCardColor"
+                        app:strokeColor="@color/colorTextSecondaryDarkTheme"
+                        app:strokeWidth="1dp">
+
+                        <TextView
+                            android:id="@+id/C"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:paddingLeft="30dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:text="C.     3 1 2 5"
+                            android:textSize="16sp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="5dp"
+                        app:cardBackgroundColor="@color/optionsCardColor"
+                        app:strokeColor="@color/colorTextSecondaryDarkTheme"
+                        app:strokeWidth="1dp">
+
+                        <TextView
+                            android:id="@+id/D"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:paddingLeft="30dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:text="D.     3 1 2 5"
+                            android:textSize="16sp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/answerText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="#E864C000"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

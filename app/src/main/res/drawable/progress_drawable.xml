@@ -1,0 +1,22 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <solid android:color="@color/textHighlightColor" />
+        </shape>
+    </item>
+   <!-- <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <stroke android:width="0.5dp" android:color="#FFFFFF" />
+                <solid android:color="@android:color/transparent" />
+            </shape>
+        </clip>
+    </item> -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <solid android:color="@color/colorWhite" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

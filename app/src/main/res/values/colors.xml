@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources xmlns:tools="http://schemas.android.com/tools">
+    <!---40EA80FC-->
+        <color name="colorAccent">#FF9E80</color>
+        <color name="windowcolor">#252529</color>
+        <color name="blueCardColor">#35353A</color>
+        <color name="optionsCardColor">#3E3E44</color>
+        <color name="checkboxlight">#FFB196</color>
+        <color name="textHighlightColor">#50FF9E80</color>
+        <color name="colorWhite">#FFFFFF</color>
+        <color name="colorBackgroundSemiTransparent">#40000000</color>
+        <color name="colorBlack">#000000</color>
+        <color name="colorTextPrimaryLightTheme">#212121</color>
+        <color name="colorTextSecondaryLightTheme">#616161</color>
+        <color name="colorTextPrimaryDarkTheme">#F5F5F5</color>
+        <color name="colorTextSecondaryDarkTheme">#BDBDBD</color>
+        <color name="md_grey_100">#F5F5F5</color>
+        <color name="md_grey_200">#EEEEEE</color>
+        <color name="md_grey_500">#9E9E9E</color>
+        <color name="md_grey_800">#424242</color>
+    <color name="mtrl_textinput_default_box_stroke_color">#BDBDBD</color>
+    <color name="hintColor">#BDBDBD</color>
+    <color name="mid_800_900">#323232</color>
+      <color name="md_grey_900">#212121</color>
+        <color name="md_black_1000">#000000</color>
+        <color name="md_white_1000">#ffffff</color>
+        <color name="picture_back">#50ff9e80</color>
+    <color name="dark_background">#212121</color>
+</resources>
